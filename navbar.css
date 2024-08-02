@@ -1,0 +1,77 @@
+
+.navbar {
+    background-color: #1A1A1A !important;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFD700 !important; 
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #FFA500 !important;
+}
+
+.navbar .nav-link {
+    color: #E0E0E0 !important;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #FFD700 !important; 
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 4px;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 5px;
+}
+
+.navbar-toggler {
+    border-color: rgba(255,255,255,0.1);
+}
+
+
+
+.dropdown-menu {
+    background-color: #2A2A2A;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,.1);
+}
+
+.dropdown-item {
+    color: #E0E0E0;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #3A3A3A;
+    color: #FFD700;
+}
+
+
+.navbar .nav-link img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #FFD700;
+    transition: border-color 0.3s ease;
+}
+
+.navbar .nav-link:hover img {
+    border-color: #FFA500;
+}
+
+body {
+    background-image: url('https://ak4.picdn.net/shutterstock/videos/7508011/thumb/1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial, sans-serif;
+}

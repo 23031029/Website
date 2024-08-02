@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="navbar.css">
+  <title>Adding funds</title>
+    <style>
+    .clearfix {
+      margin-top: 5%;
+    }
+    .clearfix img {
+      width: 20%;
+      margin-right: 20%;
+    }
+</style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+          <a class="navbar-brand" href="homepage.html">FindAds</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="company.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="service.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="resources.html">Resources</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="advisor.html">Financial Advisors</a>
+                  </li>
+              </ul>
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="image/profile.png" alt="Profile">
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-end">
+                          <li><a class="dropdown-item" href="wallet.html">My Wallet</a></li>
+                          <li><a class="dropdown-item" href="myAdvisor.html">My Advisor</a></li>
+                          <li><a class="dropdown-item" href="block.html">View Blocks</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+  </header>
+  
+
+  <div class="container">
+    <div class="clearfix">
+      <img src="image/wallet.png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="wallet" style="background-color: white;">
+    
+      <div class="payment" style="font-size: xx-large; margin-left: 10%;">
+        <form>
+          <label for="amount">Amount being Fund:</label>
+          <br>
+          <input type="text" name="amount" id="amount" placeholder="0.00" style="border: 1px; border-radius: 10px;">
+        </form>
+    
+        <br><br>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#funding1">
+            Credit Card
+          </button>
+          
+        <!-- Modal -->
+        <div class="modal fade" id="funding1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="color: black;">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Credit Card Payment</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <label for="name">Card Holder Name:</label> <br>
+                  <input name="name" id="name" type="text" placeholder="Enter Name">
+                  <br><br>
+                  <label for="number">Card Number:</label> <br>
+                  <input name="number" id="number" type="number" placeholder="Enter number">
+                  <br><br>
+                  <label for="expiry">expiry:</label> <br>
+                  <input name="expiry" id="expiry" type="month">
+                  <br><br>
+                  <label for="cvv">CVV:</label> <br>
+                  <input name="cvv" id="cvv" type="number" max="3">
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="funded.html" style="text-decoration: none;">
+                  <button type="button" class="btn btn-primary">Fund</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <br><br>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#funding2">
+          Bank Transfer
+        </button>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="funding2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="color: black;">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <label for="name">Account Name:</label> <br>
+                  <input name="name" id="name" type="text" placeholder="Enter Name">
+                  <br><br>
+                  <label for="number">Account Number:</label> <br>
+                  <input name="number" id="number" type="number" placeholder="Enter number">
+                  <br><br>
+                  <select>
+                    <label for="bank">Bank Name:</label>
+                    <option>POSB</option>
+                    <option>OCBC</option>
+                    <option>DBS</option>
+                    <option>HSBC</option>
+                    <option>Bank Of China</option>
+                    <option>UOB</option>
+                  </select>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="funded.html" style="text-decoration: none;">
+                  <button type="button" class="btn btn-primary">Fund</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <br><br>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#funding3">
+          PayNow
+        </button>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="funding3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="color: black;">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                <img src="image/payNow.png" alt="Pay Now" style="max-width: 100%; height: auto;">
+              </div>              
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="funded.html" style="text-decoration: none;">
+                  <button type="button" class="btn btn-primary">Fund</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+</body>
+</html>
